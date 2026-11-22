@@ -7,7 +7,7 @@ This repository accompanies the submission for Erdős problem 278 in the Justin 
 | Item | Public record |
 | --- | --- |
 | Original Lean proof | [Commit 717bb98 on the submitting repository’s main branch](https://github.com/jackanderson123456/jsp000237-lean/commit/717bb98f744ba6f17c662dfbfe1134aa5ad5d1de) |
-| Standalone English proof cited in the PR | [Manuscript at commit 3b38f8a](https://github.com/jackanderson123456/jsp000237-lean/blob/3b38f8aa5d8efb2953ef823be8b6886f1b3f8050/PROOF.md) |
+| Standalone English proof | [Current manuscript](PROOF.md) · [First published version at commit 3b38f8a](https://github.com/jackanderson123456/jsp000237-lean/blob/3b38f8aa5d8efb2953ef823be8b6886f1b3f8050/PROOF.md) |
 | Local reproduction | [Build commands and expected checks](README.md#reproduce) |
 
 ## Scope and requested review

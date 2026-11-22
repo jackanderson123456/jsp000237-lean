@@ -6,7 +6,7 @@ Given positive integers $n_1,\ldots,n_r$, choose one residue class modulo each. 
 
 ## Result
 
-Every choice repeats with period $L=\operatorname{lcm}(n_1,\ldots,n_r)$. Its natural density is the fraction of positions it covers in $X=\{0,\ldots,L-1\}$. Thus a tuple covering $k$ positions in one period has density $k/L$.
+Every choice repeats with period $L=\mathrm{lcm}(n_1,\ldots,n_r)$. Its natural density is the fraction of positions it covers in $`X=\{0,\ldots,L-1\}`$. Thus a tuple covering $k$ positions in one period has density $k/L$.
 
 **Minimum.** Choose residue zero at every modulus. The union then consists of the integers divisible by at least one of the moduli. The Rogers–Simpson minimum theorem says that this choice attains the least possible density. Choosing the same integer $t$ at every modulus translates the union and gives the same minimum.
 
@@ -17,7 +17,7 @@ W=\sum_{S\subseteq X}(1-B)^{|S|} B^{L-|S|}
        \prod_{i=1}^{r}\bigl(n_i-e_i(S)\bigr).
 ```
 
-The base-$B$ digit of $W$ in position $k$ counts the tuples with density $k/L$, with position zero denoting the units digit. The highest occupied position therefore gives the maximum. In formulas,
+When $W$ is written in base $B$, its digit in position $k$ counts the tuples with density $k/L$, with position zero denoting the units digit. The highest occupied position therefore gives the maximum. In formulas,
 
 ```math
 \min_a d(a)=\frac{|\{x\in X:n_i\mid x\text{ for some }i\}|}{L},
@@ -41,7 +41,7 @@ The tuple $(0,0,0,0)$ attains the minimum of $2/3$. The tuple $(0,0,1,1)$ attain
 
 ## Proof
 
-For the maximum, the product in the sum counts tuples missing every point of $S$. Grouping the terms by tuple shows that a tuple covering $k$ positions contributes exactly $B^k$. Since only $B-1$ tuples exist, their counts fit in the base-$B$ digits of $W$. [Maximum and digit formula](PROOF.md#maximum-and-counts-at-each-density)
+For the maximum, the product in the sum counts tuples missing every point of $S$. Grouping the terms by tuple shows that a tuple covering $k$ positions contributes exactly $B^k$. Since only $B-1$ tuples exist, their counts fit in the digits of $W$ written in base $B$. [Maximum and digit formula](PROOF.md#maximum-and-counts-at-each-density)
 
 For the minimum, the divisors of a prime power form a chain. The largest chosen class already has as many elements as the union of the zero classes. For a product of coprime periods, the Chinese remainder theorem expresses each class as a rectangle. Applying the smaller-period inequality first to each row and then to each column shows that moving all residues to zero can only decrease the union size. [Minimum and the common residue](PROOF.md#minimum-and-the-common-residue)
 
