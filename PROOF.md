@@ -2,7 +2,7 @@
 
 **JSP-000237 · Erdős problem 278**
 
-Given positive moduli $n_1,\ldots,n_r$, choose one residue class modulo each. What are the largest and smallest possible natural densities of their union? We give a formula in the moduli alone for each extremum. The formula for the maximum also counts how many choices attain each density. The minimum is the classical theorem of Rogers and Simpson. In the original formulation using the density *missed*, the least missed density is one minus the greatest covered density, and conversely. [Original question as quoted by Cambie, `1](https://arxiv.org/html/2508.18270v2#S1) · [Simpson, Lemma 2.3](https://doi.org/10.1016/0012-365x%2886%2990079-8)
+Given positive moduli $n_1,\ldots,n_r$, choose one residue class modulo each. What are the largest and smallest possible natural densities of their union? We give a formula in the moduli alone for each extremum. The formula for the maximum also counts how many choices attain each density. The minimum is the classical theorem of Rogers and Simpson. In the original formulation using the density *missed*, the least missed density is one minus the greatest covered density, and conversely. [Original question as quoted by Cambie, section 1](https://arxiv.org/html/2508.18270v2#S1) · [Simpson, Lemma 2.3](https://doi.org/10.1016/0012-365x%2886%2990079-8)
 
 ## Statement
 
@@ -63,7 +63,7 @@ Let $m$ be the largest $k$ with $h_k>0$. A tuple attaining $m$ contributes $B^m$
 ```math
 B^m\le W\le T B^m=(B-1)B^m<B^{m+1}.
 ```
-Thus $\lfloor\log_B W\rfloor=m$, and the maximum density is $m/L$. This extraction can use integer comparisons throughout. Direct evaluation of the displayed formula for $W$ has $2^L$ subset terms. When the least common multiple is large it can cost more than enumerating all $T$ choices; its additional output is the exact count at every coverage level.
+Thus $\lfloor\log_B W\rfloor=m$, and the maximum density is $m/L$. This extraction can use integer comparisons throughout. Direct evaluation of the displayed formula for $W$ has $2^L$ subset terms. When the least common multiple is large it can cost more than enumerating all $T$ choices. The same calculation gives the exact count at every coverage level.
 
 ## Minimum and the common residue
 
