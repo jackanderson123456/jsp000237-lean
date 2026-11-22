@@ -17,6 +17,8 @@ For moduli `(2,3,4,6)`, the period is 12. Of the 144 choices, 48 cover 8 positio
 
 ## Proof
 
+The [full mathematical proof](PROOF.md) gives the density limit, the counting identity that determines the maximum, and the two coordinate comparisons that prove the minimum. It includes a worked example and links from the mathematical steps to their Lean declarations.
+
 Fix a residue tuple. Write `U` for its set of missed positions. It contributes to `A(S)` precisely when `S ⊆ U`. Its total contribution to the signed sum is `B^(L−|U|)` by the binomial theorem on the subsets of `U`. Summing over tuples proves the digit formula because their total number is less than the base. Enumerating the formula visits `2^L` subsets. This can be substantially more expensive than direct enumeration or the published algorithms for sparse interactions.
 
 For the minimum, first consider a prime-power period. Its divisors form a chain, so the union of the zero classes is the largest such class. A translate of that class alone already has the same size. For a period that is a product of coprime factors, the Chinese remainder theorem turns each class into a rectangle. Fix a point in one coordinate and apply the induction hypothesis to precisely the classes active there. Summation permits compressing the two coordinates successively to zero. Translation preserves the resulting cardinality. Finally, full periods and a remainder of length less than `L` give the natural-density limit.
