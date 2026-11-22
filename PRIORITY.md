@@ -1,0 +1,18 @@
+# Attribution and priority evidence
+
+Audit date 2026-11-22, Asia/Shanghai. The prize catalogue number is JSP-000237. Its mathematical statement matches Erdős problem 278.
+
+| Evidence | What it establishes |
+| --- | --- |
+| [Pinned prize catalogue](https://github.com/TheJustinSunPrize/awards/blob/7782c2aa02df745da60d53e61718b714f8685a98/problems/catalog-0201-0300.md#JSP-000237) | The entry asks for both extrema. On the audited revision its status is Open, Lean proof is No, and eligibility is No. |
+| [Original question as quoted by Cambie, §1](https://arxiv.org/html/2508.18270v2) | The zero-residue minimum is classical. Rogers' result appeared in Halberstam and Roth, *Sequences* (1966), and Simpson's 1986 Lemma 2.3 gives it by inclusion–exclusion. Cambie explains why a useful general description of the other extremum is a substantive question. |
+| [Alper Ferudun, 2 September 2026](https://eulersolve.org/papers/ep-278/) | Earlier general characterization of the greatest density using compatibility graphs and an algorithm with parameter the number of moduli. |
+| [Yoshiharu Onishi, formal scope at commit 66ff46ad](https://github.com/yoshiyoyoyo44/erdos278/blob/66ff46ad30c302a0fcc19a2fb22d58a87eebf2cb/FORMALIZATION.md) and [main theorem](https://github.com/yoshiyoyoyo44/erdos278/blob/66ff46ad30c302a0fcc19a2fb22d58a87eebf2cb/Erdos278/Main.lean) | The September 2026 release already formalized an attained maximum for arbitrary positive moduli with the natural-density limit. Its main theorem uses a graph/model optimization. Its published theorem map covers the maximum. |
+| [Michael Schroeder, 22 September 2026](https://michaelschroeder.ai/research/Erdos278/companion) | Earlier formulas, complexity results and a scoped Lean companion for maximum covered density. |
+| [Prize PR 3491](https://github.com/TheJustinSunPrize/awards/pull/3491) | The PR text identifies JSP-000237 with Erdős **237** and points to `Erdos237.lean`. That is a different problem. This closed PR does not supply the congruence-density theorem. |
+
+A GitHub issue/PR search within the official repository for the literal identifier `"JSP-000237"` returned one record, PR 3491. Public repository-name searches for `erdos278`, `erdos-278`, and `erdos 278 lean` were also checked. Search by identifier can miss documents filed under other names. In the cited materials, this audit found no earlier single Lean package establishing the radix histogram formula together with the Rogers minimum for every finite family. Establishing both in one package does not by itself confer priority over earlier contributions to either part.
+
+The six proof modules in this package were developed locally with OpenAI Codex at the research request of its user. Mathematical credit for the classical minimum and for earlier maximum results belongs to their original authors. The proposed contribution is this independently written formalization and its explicit modulus-only formula for the complete histogram. The combinatorial expansion is a weighted inclusion–exclusion identity. This audit establishes neither historical first discovery of that identity nor first public formalization worldwide.
+
+The official rules compare complete proofs in accepted original repositories, with the selected commit and its independently checkable public history. A private commit or archive digest identifies these exact files. The package has no public release date or registered prize priority. The mathematical adequacy of a `2^L` formula, the interpretation of the earlier maximum proofs, and award eligibility are for the prize reviewers to decide. [Legacy award process](https://github.com/TheJustinSunPrize/awards/blob/7782c2aa02df745da60d53e61718b714f8685a98/docs/award-process.md)
